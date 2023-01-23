@@ -21,13 +21,14 @@
       display: flex;
       align-items: center;
       gap: 10px;
-      border: 1px solide lightgray;
+      border: 1px solid lightgray;
       padding: 5px;
       border-radius: 5px;
 
       input {
         border: none;
         width: 500px;
+        outline: 0;
       }
     }
   }
