@@ -5,6 +5,9 @@
   padding: 10px 20px;
   height: 50px;
   border-bottom: 1px solid lightgray;
+  position: sticky;
+  top: 0;
+  // z-index: 1;
 
   .left {
     display: flex;
