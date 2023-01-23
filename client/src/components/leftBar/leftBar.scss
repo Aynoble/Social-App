@@ -3,9 +3,18 @@
   position: sticky;
   top: 70px;
   height: calc(100vh - 70px);
-  overflow: scroll;
-  &::-webkit-scrollbar {
-    display: none;
+  overflow: hidden;
+
+  &:hover {
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+      width: 10px;
+      background-color: lightgray;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: darkgray;
+      border-radius: 20px;
+    }
   }
 
   .container {
