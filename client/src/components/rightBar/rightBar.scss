@@ -3,8 +3,100 @@
   position: sticky;
   top: 70px;
   height: calc(100vh - 70px);
-  overflow: scroll;
-  &::-webkit-scrollbar {
-    display: none;
+  overflow-y: hidden;
+
+  &:hover {
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+      width: 7px;
+      background-color: lightgray;
+    }
+    &::-webkit-scrollbar-thumb {
+      border-radius: 20px;
+      background-color: darkgray;
+    }
+  }
+  .container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      box-shadow: 1px 0px 15px 8px rgba(240, 216, 216, 0.75);
+      -webkit-box-shadow: 1px 0px 15px 8px rgba(240, 216, 216, 0.75);
+      -moz-box-shadow: 1px 0px 15px 8px rgba(240, 216, 216, 0.75);
+      padding: 20px;
+      margin-bottom: 20px;
+
+      span {
+        color: gray;
+      }
+
+      .user {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px 0px;
+
+        .userInfo {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          position: relative;
+
+          img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+
+          .online {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: limegreen;
+            position: absolute;
+            top: 0;
+            left: 30px;
+          }
+
+          p {
+            color: gray;
+          }
+
+          span {
+            font-weight: 500;
+            color: black;
+          }
+        }
+
+        span {
+          font-size: 14px;
+        }
+        .buttons {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          button {
+            padding: 5px;
+            border: none;
+            color: white;
+            cursor: pointer;
+
+            &:first-child {
+              background-color: #5271ff;
+            }
+
+            &:last-child {
+              background-color: #f0544f;
+            }
+          }
+        }
+      }
+    }
   }
 }
