@@ -1,0 +1,62 @@
+@import "../variable.scss";
+@mixin lightNav {
+  .navBar {
+    border-bottom: 1px solid $light-border;
+    background-color: $light-bg;
+
+    .left {
+      span {
+        color: $light-logo;
+      }
+
+      .search {
+        border: 1px solid $light-border;
+
+        input {
+        }
+      }
+    }
+
+    .right {
+      .user {
+        img {
+        }
+
+        span {
+        }
+      }
+    }
+  }
+}
+
+@mixin darkNav {
+  .navBar {
+    border-bottom: 1px solid $dark-border;
+    background-color: $dark-bg;
+    color: $dark-textColor;
+
+    .left {
+      span {
+        color: $dark-logo;
+      }
+
+      .search {
+        border: 1px solid $dark-border;
+
+        input {
+          color: $dark-textColor;
+        }
+      }
+    }
+
+    .right {
+      .user {
+        img {
+        }
+
+        span {
+        }
+      }
+    }
+  }
+}

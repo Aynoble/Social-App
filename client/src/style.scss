@@ -1,0 +1,14 @@
+@import "./themes/navMix.scss";
+@import "./themes//leftBarMix.scss";
+@import "./themes/rightBarMix.scss";
+.theme-light {
+  @include lightNav;
+  @include lightLeftBar;
+  @include lightRightBar;
+}
+
+.theme-dark {
+  @include darkNav;
+  @include darkLeftBar;
+  @include darkRightBar;
+}

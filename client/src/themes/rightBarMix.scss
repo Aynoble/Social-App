@@ -1,0 +1,103 @@
+@import "../variable.scss";
+
+@mixin lightRightBar {
+  .rightBar {
+    background-color: $light-bg-soft;
+    color: $light-textColor;
+
+    &:hover {
+      overflow-y: scroll;
+      &::-webkit-scrollbar {
+        width: 7px;
+        background-color: lightgray;
+      }
+      &::-webkit-scrollbar-thumb {
+        border-radius: 20px;
+        background-color: darkgray;
+      }
+    }
+    .container {
+      .item {
+        span {
+          color: $light-textColorSoft;
+        }
+
+        .user {
+          .userInfo {
+            img {
+            }
+
+            .online {
+            }
+
+            p {
+              color: $light-textColorSoft;
+            }
+
+            span {
+              color: $light-textColor;
+            }
+          }
+
+          span {
+          }
+          .buttons {
+            button {
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin darkRightBar {
+  .rightBar {
+    background-color: $dark-bg-soft;
+    color: $dark-textColor;
+
+    &:hover {
+      overflow-y: scroll;
+      &::-webkit-scrollbar {
+        width: 7px;
+        background-color: lightgray;
+      }
+      &::-webkit-scrollbar-thumb {
+        border-radius: 20px;
+        background-color: darkgray;
+      }
+    }
+    .container {
+      .item {
+        span {
+          color: $dark-textColorSoft;
+        }
+
+        .user {
+          .userInfo {
+            img {
+            }
+
+            .online {
+            }
+
+            p {
+              color: $dark-textColorSoft;
+            }
+
+            span {
+              color: $dark-textColor;
+            }
+          }
+
+          span {
+          }
+          .buttons {
+            button {
+            }
+          }
+        }
+      }
+    }
+  }
+}

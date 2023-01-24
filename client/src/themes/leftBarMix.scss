@@ -1,0 +1,88 @@
+@import "../variable.scss";
+@mixin lightLeftBar {
+  .leftBar {
+    background-color: $light-bg;
+    color: $light-textColor;
+
+    &:hover {
+      &::-webkit-scrollbar {
+        background-color: lightgray;
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: darkgray;
+        border-radius: 20px;
+      }
+    }
+
+    .container {
+      hr {
+        background-color: $light-border;
+      }
+
+      .menu {
+        span {
+        }
+
+        .user {
+          img {
+          }
+
+          span {
+          }
+        }
+
+        .item {
+          img {
+          }
+
+          span {
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin darkLeftBar {
+  .leftBar {
+    background-color: $dark-bg;
+    color: $dark-textColor;
+
+    &:hover {
+      &::-webkit-scrollbar {
+        background-color: lightgray;
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: darkgray;
+        border-radius: 20px;
+      }
+    }
+
+    .container {
+      hr {
+        background-color: $dark-border;
+      }
+
+      .menu {
+        span {
+        }
+
+        .user {
+          img {
+          }
+
+          span {
+          }
+        }
+
+        .item {
+          img {
+          }
+
+          span {
+          }
+        }
+      }
+    }
+  }
+}
