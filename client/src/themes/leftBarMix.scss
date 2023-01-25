@@ -10,7 +10,6 @@
       }
       &::-webkit-scrollbar-thumb {
         background-color: darkgray;
-        border-radius: 20px;
       }
     }
 
@@ -50,11 +49,10 @@
 
     &:hover {
       &::-webkit-scrollbar {
-        background-color: lightgray;
+        background-color: rgb(158, 154, 154);
       }
       &::-webkit-scrollbar-thumb {
-        background-color: darkgray;
-        border-radius: 20px;
+        background-color: rgb(121, 119, 119);
       }
     }
 

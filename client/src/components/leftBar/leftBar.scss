@@ -4,16 +4,13 @@
   top: 70px;
   height: calc(100vh - 70px);
   overflow: hidden;
-  background-color: white;
 
   &:hover {
     overflow-y: scroll;
     &::-webkit-scrollbar {
       width: 7px;
-      background-color: lightgray;
     }
     &::-webkit-scrollbar-thumb {
-      background-color: darkgray;
       border-radius: 20px;
     }
   }
@@ -25,7 +22,6 @@
       margin: 20px 0px;
       border: none;
       height: 0.5px;
-      background-color: lightgray;
     }
 
     .menu {
