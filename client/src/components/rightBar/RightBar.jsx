@@ -9,10 +9,10 @@ function RightBar() {
           <div className="user">
             <div className="userInfo">
               <img
-                src="https://images.unsplash.com/photo-1581803118522-7b72a50f7e9f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fG1hbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                src="https://github.com/Aynoble/Portfolio-Website/blob/main/img/Marvellous%20Adelaja.jpg?raw=true"
                 alt=""
               />
-              <span>Ayomide</span>
+              <span>Marvellous</span>
             </div>
             <div className="buttons">
               <button>follow</button>
@@ -22,10 +22,10 @@ function RightBar() {
           <div className="user">
             <div className="userInfo">
               <img
-                src="https://images.unsplash.com/photo-1581803118522-7b72a50f7e9f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fG1hbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                src="https://github.com/Aynoble/Portfolio-Website/blob/main/img/Josiah.jpg?raw=true"
                 alt=""
               />
-              <span>Ayomide</span>
+              <span>Josiah</span>
             </div>
             <div className="buttons">
               <button>follow</button>
