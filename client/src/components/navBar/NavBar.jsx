@@ -10,9 +10,11 @@ import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { DarkModeContext } from "../../context/darkModeContext";
+import { AuthContext } from "../../context/authContext";
 
 function NavBar() {
-  const { toggle } = useContext(DarkModeContext);
+  const { toggle, darkMode } = useContext(DarkModeContext);
+  const { currentUser } = useContext(AuthContext);
   return (
     <div className="navBar">
       <div className="left">
@@ -20,7 +22,15 @@ function NavBar() {
           <span>aysocial</span>
         </Link>
         <HomeOutlinedIcon style={{ cursor: "pointer" }} />
-        <DarkModeOutlinedIcon onClick={toggle} style={{ cursor: "pointer" }} />
+        {darkMode ? (
+          <WbSunnyOutlinedIcon onClick={toggle} style={{ cursor: "pointer" }} />
+        ) : (
+          <DarkModeOutlinedIcon
+            onClick={toggle}
+            style={{ cursor: "pointer" }}
+          />
+        )}
+
         <GridViewOutlinedIcon style={{ cursor: "pointer" }} />
         <div className="search">
           <SearchOutlinedIcon style={{ cursor: "pointer" }} />
@@ -32,11 +42,8 @@ function NavBar() {
         <EmailOutlinedIcon style={{ cursor: "pointer" }} />
         <NotificationsOutlinedIcon style={{ cursor: "pointer" }} />
         <div className="user" style={{ cursor: "pointer" }}>
-          <img
-            src="https://images.unsplash.com/photo-1581803118522-7b72a50f7e9f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fG1hbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-            alt=""
-          />
-          <span>Ayomide</span>
+          <img src={currentUser.profilePic} alt="" />
+          <span>{currentUser.name}</span>
         </div>
       </div>
     </div>
