@@ -18,6 +18,7 @@
     }
     .container {
       .item {
+        background-color: $light-bg;
         span {
           color: $light-textColorSoft;
         }
@@ -66,6 +67,7 @@
     }
     .container {
       .item {
+        background-color: $dark-bg;
         span {
           color: $dark-textColorSoft;
         }
