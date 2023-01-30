@@ -4,6 +4,7 @@
 @import "./themes/homeMix.scss";
 @import "./themes//postMix.scss";
 @import "./themes/commentsMix.scss";
+@import "./themes/profileMix.scss";
 .theme-light {
   @include lightNav;
   @include lightLeftBar;
@@ -11,6 +12,7 @@
   @include homeLight;
   @include postLight;
   @include commentsLight;
+  @include profileLight;
 }
 
 .theme-dark {
@@ -20,4 +22,5 @@
   @include homeDark;
   @include postDark;
   @include commentsDark;
+  @include profileDark;
 }

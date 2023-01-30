@@ -1,0 +1,97 @@
+@import "../variable.scss";
+
+@mixin profileLight {
+  .profile {
+    background-color: $light-bg-soft;
+
+    .images {
+      .cover {
+      }
+      .profilePic {
+        border: 2px solid $light-bg;
+      }
+    }
+
+    .profileContainer {
+      margin: 20px 70px;
+
+      .uInfo {
+        background-color: $light-bg;
+        color: $light-textColor;
+
+        .left {
+          a {
+            color: $light-textColorSoft;
+          }
+        }
+
+        .center {
+          span {
+          }
+
+          .info {
+            .item {
+              color: $light-textColorSoft;
+
+              span {
+              }
+            }
+          }
+          button {
+          }
+        }
+
+        .right {
+        }
+      }
+    }
+  }
+}
+
+@mixin profileDark {
+  .profile {
+    background-color: $dark-bg-soft;
+
+    .images {
+      .cover {
+      }
+      .profilePic {
+        border: 2px solid $dark-bg;
+      }
+    }
+
+    .profileContainer {
+      margin: 20px 70px;
+
+      .uInfo {
+        background-color: $dark-bg;
+        color: $dark-textColor;
+
+        .left {
+          a {
+            color: $dark-textColorSoft;
+          }
+        }
+
+        .center {
+          span {
+          }
+
+          .info {
+            .item {
+              color: $dark-textColorSoft;
+
+              span {
+              }
+            }
+          }
+          button {
+          }
+        }
+
+        .right {
+        }
+      }
+    }
+  }
+}
