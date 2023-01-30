@@ -1,5 +1,3 @@
-@import "../../variable.scss";
-
 .comments {
   .write {
     display: flex;
@@ -18,9 +16,7 @@
     input {
       flex: 5;
       padding: 10px;
-      border: 1px solid $light-border;
       background-color: transparent;
-      color: $light-textColor;
       outline: 0;
     }
 
@@ -57,7 +53,6 @@
       }
 
       p {
-        color: $light-textColorSoft;
       }
     }
 

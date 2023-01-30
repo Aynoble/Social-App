@@ -1,14 +1,23 @@
 @import "./themes/navMix.scss";
 @import "./themes//leftBarMix.scss";
 @import "./themes/rightBarMix.scss";
+@import "./themes/homeMix.scss";
+@import "./themes//postMix.scss";
+@import "./themes/commentsMix.scss";
 .theme-light {
   @include lightNav;
   @include lightLeftBar;
   @include lightRightBar;
+  @include homeLight;
+  @include postLight;
+  @include commentsLight;
 }
 
 .theme-dark {
   @include darkNav;
   @include darkLeftBar;
   @include darkRightBar;
+  @include homeDark;
+  @include postDark;
+  @include commentsDark;
 }

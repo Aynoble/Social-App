@@ -1,0 +1,71 @@
+@import "../variable.scss";
+
+@mixin commentsLight {
+  .comments {
+    .write {
+      img {
+      }
+
+      input {
+        border: 1px solid $light-border;
+
+        color: $light-textColor;
+      }
+
+      button {
+      }
+    }
+    .comment {
+      img {
+      }
+
+      .info {
+        span {
+        }
+
+        p {
+          color: $light-textColorSoft;
+        }
+      }
+
+      .date {
+        color: gray;
+      }
+    }
+  }
+}
+
+@mixin commentsDark {
+  .comments {
+    .write {
+      img {
+      }
+
+      input {
+        border: 1px solid $dark-border;
+
+        color: $dark-textColor;
+      }
+
+      button {
+      }
+    }
+    .comment {
+      img {
+      }
+
+      .info {
+        span {
+        }
+
+        p {
+          color: $dark-textColorSoft;
+        }
+      }
+
+      .date {
+        color: gray;
+      }
+    }
+  }
+}

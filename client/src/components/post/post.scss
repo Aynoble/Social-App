@@ -1,12 +1,8 @@
-@import "../../variable.scss";
-
 .post {
   box-shadow: 0px 1px 8px 3px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 0px 1px 8px 3px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 1px 8px 3px rgba(0, 0, 0, 0.75);
   border-radius: 20px;
-  background-color: $light-bg;
-  color: $light-textColor;
   .container {
     padding: 20px;
 

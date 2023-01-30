@@ -6,13 +6,16 @@ import ShareOutlinedIcon from "@mui/icons-material/ShareOutlined";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import { Link } from "react-router-dom";
 import Comments from "../comments/Comments";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { DarkModeContext } from "../../context/darkModeContext";
+import "../../style.scss";
 
 function Post({ post }) {
   const [commentOpen, setCommentOpen] = useState(false);
   const liked = false;
+  const { darkMode } = useContext(DarkModeContext);
   return (
-    <div className="post">
+    <div className={`theme-${darkMode ? "dark" : "light"} post`}>
       <div className="container">
         <div className="user">
           <div className="userInfo">

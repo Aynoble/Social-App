@@ -1,0 +1,12 @@
+@import "../variable.scss";
+@mixin homeLight {
+  .home {
+    background-color: $light-bg-soft;
+  }
+}
+
+@mixin homeDark {
+  .home {
+    background-color: $dark-bg-soft;
+  }
+}

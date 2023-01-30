@@ -1,0 +1,61 @@
+@import "../variable.scss";
+
+@mixin postLight {
+  .post {
+    background-color: $light-bg;
+    color: $light-textColor;
+    .container {
+      .user {
+        .userInfo {
+          img {
+          }
+          .details {
+            .name {
+            }
+
+            .date {
+            }
+          }
+        }
+      }
+      .content {
+        img {
+        }
+      }
+      .info {
+        .item {
+        }
+      }
+    }
+  }
+}
+
+@mixin postDark {
+  .post {
+    background-color: $dark-bg;
+    color: $dark-textColor;
+    .container {
+      .user {
+        .userInfo {
+          img {
+          }
+          .details {
+            .name {
+            }
+
+            .date {
+            }
+          }
+        }
+      }
+      .content {
+        img {
+        }
+      }
+      .info {
+        .item {
+        }
+      }
+    }
+  }
+}
