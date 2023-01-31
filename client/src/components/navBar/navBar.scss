@@ -1,3 +1,5 @@
+@import "../../responsive.scss";
+@import "../../variable.scss";
 .navBar {
   display: flex;
   align-items: center;
@@ -7,11 +9,28 @@
   position: sticky;
   top: 0;
   z-index: 999;
+  @include mobile {
+    // gap: 30px;
+    // width: 100vw;
+    // overflow: hidden;
+  }
 
   .left {
     display: flex;
     align-items: center;
     gap: 30px;
+
+    .homeIcon {
+      @include mobile {
+        display: none;
+      }
+    }
+
+    .grid {
+      @include mobile {
+        display: none;
+      }
+    }
 
     span {
       font-weight: bold;
@@ -24,12 +43,15 @@
       gap: 10px;
       padding: 5px;
       border-radius: 5px;
-
+      position: relative;
       input {
         border: none;
         width: 500px;
         outline: 0;
         background-color: transparent;
+        @include mobile {
+          display: none;
+        }
       }
     }
   }
@@ -39,11 +61,20 @@
     align-items: center;
     gap: 20px;
 
+    .addFriendsIcon {
+      @include mobile {
+        display: none;
+      }
+    }
+
     .user {
       display: flex;
       align-items: center;
       gap: 10px;
       font-weight: 500;
+      @include mobile {
+        display: none;
+      }
 
       img {
         width: 30px;

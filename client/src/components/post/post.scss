@@ -1,8 +1,15 @@
+@import "../../responsive.scss";
+
 .post {
   box-shadow: 0px 1px 8px 3px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 0px 1px 8px 3px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 1px 8px 3px rgba(0, 0, 0, 0.75);
   border-radius: 20px;
+  @include mobile {
+    width: 90%;
+    align-self: center;
+  }
+
   .container {
     padding: 20px;
 
@@ -38,17 +45,29 @@
     .content {
       margin: 20px 0px;
 
+      p {
+        @include mobile {
+          font-size: 15px;
+        }
+      }
+
       img {
         width: 100%;
         max-height: 500px;
         object-fit: cover;
         margin-top: 20px;
+        @include mobile {
+          height: 200px;
+        }
       }
     }
     .info {
       display: flex;
       align-items: center;
       gap: 20px;
+      @include mobile {
+        justify-content: space-around;
+      }
 
       .item {
         display: flex;
@@ -56,6 +75,14 @@
         gap: 10px;
         cursor: pointer;
         font-size: 14px;
+        @include mobile {
+          font-size: 12px;
+        }
+        span {
+          @include mobile {
+            display: none;
+          }
+        }
       }
     }
   }

@@ -21,7 +21,7 @@ function NavBar() {
         <Link to="/" style={{ textDecoration: "none" }}>
           <span>aysocial</span>
         </Link>
-        <HomeOutlinedIcon style={{ cursor: "pointer" }} />
+        <HomeOutlinedIcon style={{ cursor: "pointer" }} className="homeIcon" />
         {darkMode ? (
           <WbSunnyOutlinedIcon onClick={toggle} style={{ cursor: "pointer" }} />
         ) : (
@@ -31,14 +31,17 @@ function NavBar() {
           />
         )}
 
-        <GridViewOutlinedIcon style={{ cursor: "pointer" }} />
+        <GridViewOutlinedIcon style={{ cursor: "pointer" }} className="grid" />
         <div className="search">
           <SearchOutlinedIcon style={{ cursor: "pointer" }} />
           <input type="text" placeholder="Search..." />
         </div>
       </div>
       <div className="right">
-        <PersonOutlinedIcon style={{ cursor: "pointer" }} />
+        <PersonOutlinedIcon
+          style={{ cursor: "pointer" }}
+          className="addFriendsIcon"
+        />
         <EmailOutlinedIcon style={{ cursor: "pointer" }} />
         <NotificationsOutlinedIcon style={{ cursor: "pointer" }} />
         <div className="user" style={{ cursor: "pointer" }}>

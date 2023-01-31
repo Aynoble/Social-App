@@ -1,9 +1,15 @@
+@import "../../responsive.scss";
+
 .rightBar {
   flex: 3;
   position: sticky;
   top: 70px;
   height: calc(100vh - 70px);
   overflow-y: hidden;
+
+  @include mobile {
+    display: none;
+  }
 
   &:hover {
     overflow-y: scroll;

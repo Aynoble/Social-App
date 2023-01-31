@@ -1,3 +1,10 @@
+@import "../../responsive.scss";
+
 .home {
   padding: 20px 70px;
+
+  @include mobile {
+    padding: 20px 20px;
+    overflow-x: hidden;
+  }
 }

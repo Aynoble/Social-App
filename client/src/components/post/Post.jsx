@@ -39,15 +39,15 @@ function Post({ post }) {
         <div className="info">
           <div className="item">
             {liked ? <FavoriteOutlinedIcon /> : <FavoriteBorderOutlinedIcon />}
-            12 Likes
+            12<span> Likes</span>
           </div>
           <div className="item" onClick={() => setCommentOpen(!commentOpen)}>
             <TextsmsOutlinedIcon />
-            12 Comments
+            12<span> Comments</span>
           </div>
           <div className="item">
             <ShareOutlinedIcon />
-            Share
+            <span>Share</span>
           </div>
         </div>
         {commentOpen && <Comments />}

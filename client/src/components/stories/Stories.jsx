@@ -19,11 +19,6 @@ function Stories() {
       name: "Paul",
       img: "https://images.unsplash.com/photo-1674035895575-b7309b268f75?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE2fHhIeFlUTUhMZ09jfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
     },
-    {
-      id: 4,
-      name: "Joshua",
-      img: "https://images.unsplash.com/photo-1672661164570-d5e7e0890a69?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDQwfHhIeFlUTUhMZ09jfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-    },
   ];
 
   const { currentUser } = useContext(AuthContext);
