@@ -47,7 +47,7 @@
 
       p {
         @include mobile {
-          font-size: 15px;
+          font-size: 14px;
         }
       }
 
@@ -58,6 +58,9 @@
         margin-top: 20px;
         @include mobile {
           height: 200px;
+        }
+        @include smallScreen {
+          height: 300px;
         }
       }
     }

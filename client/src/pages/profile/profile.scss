@@ -3,6 +3,7 @@
 .profile {
   @include mobile {
     width: 100vw;
+    overflow-x: hidden;
   }
   .images {
     width: 100%;
@@ -35,6 +36,14 @@
       margin-left: 20px !important;
       margin-right: 20px !important;
     }
+    @include smallScreen {
+      margin-left: 20px !important;
+      margin-right: 20px !important;
+    }
+    @include medium {
+      margin-left: 20px !important;
+      margin-right: 20px !important;
+    }
 
     .uInfo {
       height: 180px;
@@ -58,9 +67,12 @@
         display: flex;
         gap: 10px;
         align-items: center;
-        // @include mobile {
-        //   display: none;
-        // }
+        @include smallScreen {
+          flex-wrap: wrap;
+        }
+        @include medium {
+          flex-wrap: wrap;
+        }
 
         a {
         }

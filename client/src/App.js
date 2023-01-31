@@ -72,7 +72,7 @@ function App() {
     },
   ]);
   return (
-    <div>
+    <div style={{ width: "100vw" }}>
       <RouterProvider router={router} />
     </div>
   );

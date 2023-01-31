@@ -10,6 +10,9 @@
   @include mobile {
     display: none;
   }
+  @include smallScreen {
+    display: none;
+  }
 
   &:hover {
     overflow-y: scroll;
@@ -45,6 +48,9 @@
         align-items: center;
         justify-content: space-between;
         margin: 20px 0px;
+        @include medium {
+          flex-direction: column;
+        }
 
         .userInfo {
           display: flex;
@@ -84,7 +90,9 @@
           display: flex;
           align-items: center;
           gap: 10px;
-
+          @include medium {
+            margin-top: 10px;
+          }
           button {
             padding: 5px;
             border: none;

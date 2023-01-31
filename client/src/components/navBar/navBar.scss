@@ -9,11 +9,6 @@
   position: sticky;
   top: 0;
   z-index: 999;
-  @include mobile {
-    // gap: 30px;
-    // width: 100vw;
-    // overflow: hidden;
-  }
 
   .left {
     display: flex;
@@ -52,6 +47,12 @@
         @include mobile {
           display: none;
         }
+        @include smallScreen {
+          width: 200px;
+        }
+        @include medium {
+          width: 270px;
+        }
       }
     }
   }
@@ -73,6 +74,9 @@
       gap: 10px;
       font-weight: 500;
       @include mobile {
+        display: none;
+      }
+      @include smallScreen {
         display: none;
       }
 
