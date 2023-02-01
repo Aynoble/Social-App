@@ -5,6 +5,7 @@
 @import "./themes//postMix.scss";
 @import "./themes/commentsMix.scss";
 @import "./themes/profileMix.scss";
+@import "./themes/createPostMix.scss";
 .theme-light {
   @include lightNav;
   @include lightLeftBar;
@@ -13,6 +14,7 @@
   @include postLight;
   @include commentsLight;
   @include profileLight;
+  @include createPostLight;
 }
 
 .theme-dark {
@@ -23,4 +25,5 @@
   @include postDark;
   @include commentsDark;
   @include profileDark;
+  @include createPostDark;
 }

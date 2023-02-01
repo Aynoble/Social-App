@@ -5,6 +5,8 @@
 
   @include mobile {
     padding: 20px;
+    padding-top: 0 !important;
+    margin-top: -30px;
     overflow-x: hidden;
   }
   @include smallScreen {

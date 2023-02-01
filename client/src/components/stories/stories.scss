@@ -2,14 +2,26 @@
 .stories {
   display: flex;
   gap: 10px;
-  height: 250px;
-  margin-bottom: 30px;
+  max-height: 250px;
   align-items: center;
+  margin-bottom: 30px;
+  max-height: 200px;
+  margin-top: 20px;
+  @include large {
+    margin-top: 50px;
+  }
 
   @include mobile {
-    height: max-content;
-    width: 100%;
+    max-height: 80px !important;
     align-items: center;
+  }
+  @include smallScreen {
+    margin-top: 50px !important;
+    margin-bottom: 40px;
+  }
+  @include medium {
+    margin-top: 12px;
+    height: 150px !important;
   }
 
   .story {
@@ -17,11 +29,10 @@
     border-radius: 10px;
     overflow: hidden;
     position: relative;
-    height: 170px;
 
     @include mobile {
       border-radius: 50%;
-      height: 50px;
+      height: 100%;
       width: 50px;
     }
 
@@ -36,6 +47,8 @@
       left: 10px;
       color: white;
       font-weight: 500;
+      display: flex;
+      flex-wrap: wrap;
       @include mobile {
         display: none;
       }
