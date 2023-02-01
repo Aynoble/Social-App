@@ -1,0 +1,70 @@
+@import "../variable.scss";
+@mixin createPostLight {
+  .createPost {
+    background-color: $light-bg;
+    color: $light-textColorSoft;
+
+    .createPost__container {
+      .top {
+        img {
+        }
+
+        input {
+          color: $light-textColor;
+        }
+      }
+      hr {
+        background-color: $light-border;
+      }
+      .bottom {
+        .items {
+          .item {
+            img {
+            }
+
+            span {
+            }
+          }
+        }
+        button {
+        }
+      }
+    }
+  }
+}
+
+@mixin createPostDark {
+  .createPost {
+    background-color: $dark-bg;
+    color: $dark-textColorSoft;
+
+    .createPost__container {
+      .top {
+        img {
+        }
+
+        input {
+          color: $dark-textColor;
+        }
+      }
+
+      hr {
+        background-color: $dark-border;
+      }
+
+      .bottom {
+        .items {
+          .item {
+            img {
+            }
+
+            span {
+            }
+          }
+        }
+        button {
+        }
+      }
+    }
+  }
+}
